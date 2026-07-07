@@ -47,4 +47,18 @@ else:
 
 print("Прибуткових угод: ", win_trades)
 print("Збиткових угод:", loss_trades)
+
+win_rate = win_trades / len(trades) * 100
+win_rate = round(win_rate, 2)
+print("Win Rate:", win_rate, "%")
+
+average_profit = total_profit / len(trades)
+average_profit = round(average_profit, 2)
+print("Середній результат на угоду:", average_profit)
   
+best_trade = max(profits)
+worst_trade = min(profits)
+
+print("Найкраща угода:", best_trade)
+print("Найгірша угода:", worst_trade)
+
